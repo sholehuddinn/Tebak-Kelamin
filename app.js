@@ -8,7 +8,7 @@ async function show (name, gender, probability) {
   }else if (gender == "female") {
     gender = 'Perempuan';
   }
-  const PredictionText = `Halo ${name}, Jenis Kelamin Kamu Kemungkinan Adalah ${probability * 100}% ${gender}`;
+  const PredictionText = `Halo <span class="font-bold">${name}</span> , Jenis Kelamin Kamu Kemungkinan Adalah ${probability * 100}% ${gender}`;
   out.innerHTML = PredictionText;
 }
 
